@@ -1,6 +1,11 @@
 <template>
-  <div :class="{'has-logo':showLogo}">
-    <logo v-if="showLogo" :collapse="isCollapse" />
+  <div>
+    <div :style="{ backgroundImage: `url(${headerProfile})`,height: '110px', fontSize: '13px'}" class="sidebar-header">
+      <div style="color: rgb(223, 228, 237);font-weight: 600">
+        <span>admin</span><br>
+        <span>123</span>
+      </div>
+    </div>
     <el-scrollbar wrap-class="scrollbar-wrapper">
       <el-menu
         :default-active="activeMenu"
@@ -20,12 +25,16 @@
 
 <script>
 import { mapGetters } from 'vuex'
-import Logo from './Logo'
 import SidebarItem from './SidebarItem'
 import variables from '@/styles/variables.scss'
 
 export default {
-  components: { SidebarItem, Logo },
+  components: { SidebarItem },
+  data() {
+    return {
+      headerProfile: require('@/assets/header-profile.png')
+    }
+  },
   computed: {
     ...mapGetters([
       'sidebar'
@@ -54,3 +63,9 @@ export default {
   }
 }
 </script>
+
+<style lang="scss" scoped>
+.sidebar-header{
+  padding: 33px 25px;
+}
+</style>

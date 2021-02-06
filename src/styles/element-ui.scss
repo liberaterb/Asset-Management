@@ -47,3 +47,27 @@
 .el-range-separator {
   box-sizing: content-box;
 }
+
+.el-card{
+  border-radius: 0%;
+  .el-card__header {
+    padding: 10px 20px;
+    border-width: 3px 0 0;
+    border-color: #e7eaec;
+    border-style: solid solid none;
+    color: inherit;
+    font-weight: 600;
+    min-height: 48px;
+  }
+  .el-card__body {
+    border-color: #e7eaec;
+    border-image: none;
+    border-style: solid solid none;
+    border-width: 1px 0;
+  }
+}
+
+.el-tag {
+  background-color: rgb(28, 132, 198);
+  color: rgb(255, 255, 255);
+}
