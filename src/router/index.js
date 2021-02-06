@@ -82,6 +82,7 @@ export const constantRoutes = [
       }
     ]
   },
+
   {
     path: '/report-analysis',
     name: 'ReportAnalysis',
