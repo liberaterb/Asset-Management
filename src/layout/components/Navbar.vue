@@ -4,7 +4,7 @@
 
     <breadcrumb class="breadcrumb-container" />
     <div class="right-menu">
-      <el-dropdown class="avatar-container" trigger="click">
+      <!-- <el-dropdown class="avatar-container" trigger="click">
         <div class="avatar-wrapper">
           <img :src="avatar+'?imageView2/1/w/80/h/80'" class="user-avatar">
           <i class="el-icon-caret-bottom" />
@@ -25,7 +25,8 @@
             <span style="display:block;">Log Out</span>
           </el-dropdown-item>
         </el-dropdown-menu>
-      </el-dropdown>
+      </el-dropdown> -->
+      <a style="display: flex;align-items: center">1</a>
     </div>
   </div>
 </template>
@@ -85,8 +86,10 @@ export default {
 
   .right-menu {
     float: right;
+    margin-right: 40px;
     height: 100%;
     line-height: 50px;
+    color: #999c9e;
 
     &:focus {
       outline: none;
